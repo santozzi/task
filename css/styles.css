@@ -1,0 +1,272 @@
+@import url('bootstrap.min.css');
+:root{
+    --primary:#007bff;
+    --secondary:#6c757d;
+    --success:#00BC8C;
+    --info:#17a2b8;
+    --warning:#F39C12;
+    --danger:#E74C3C;
+    --light:#f8f9fa;
+    --completados-color:#343a40;
+    --alta-color: #e1222390;
+    --home-color: #3ABDE4;
+    
+    --media-color: #f8e71c90;
+    --galeria-color: #2DA1D190;
+    --baja-color: #7ed32190;
+    --header-color: #000000;
+
+
+}
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-image: url("../images/escritorio2.jpg");
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    position:relative;
+    
+}
+.container-nav{
+    position: fixed;
+    top: 0px;
+    z-index: 3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav {
+    width:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;   
+    background-color: #cccccc80;
+    padding: 5px;
+    border-radius: 40px;
+    padding:10px 40px;
+  }
+  nav p {
+    margin: 0;
+    color: var(--header-color);
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+    font-size: 0.6-rem;
+    display:none;
+  }
+  nav div {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    gap:2px;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.5rem;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px #000000;
+  }
+  nav i {
+    font-size: 1.5rem;
+    color: #001f3b;
+  }
+  .nav-home {
+    background-color: var(--home-color);
+  }
+  .nav-alta {
+    background-color: var(--alta-color);
+  }
+  .nav-media {
+    background-color: var(--media-color);
+  }
+  .nav-baja {
+    background-color: var(--baja-color);
+  }
+  .nav-completados {
+    background-color: var(--secondary);
+    
+  }
+.section-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.section-form img{
+    margin: 20px 0;
+    width: 150px;
+
+}
+#boton-formulario-edit{
+    background-color:  var(--media-color);
+    color: black;
+    border:1px solid var(--media-color);
+    display:none;
+}
+main{
+
+   
+
+    width: 100%;
+    margin-top:50px;
+    color:white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding:20px;
+
+}
+h5{
+    font-size: 1rem;
+}
+section{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.section-form form{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 300px;
+    background-color: #00000050;
+    border-radius: 10px;
+    padding: 20px;
+    filter:drop-shadow(0px 0px 5px #ffffff);
+    gap:1.3rem;
+}
+.section-form form input, select, textarea{
+    border:1px solid #3ABDE4;
+    border-radius: 10px;
+    width: 100%;
+}
+.section-form form input, select{
+    height: 2.5rem;
+}
+.button{
+    background-color: #3ABDE4;
+    color:white
+}
+.section-cards{
+    display:flex;
+    min-height: 682px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    gap:1.3rem;
+}
+.prioridad-baja, .prioridad-media, .prioridad-alta{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0;
+    gap:10px;
+}
+
+.tarjeta{
+    background-color: #333333;
+    color:#F0F0F0;
+    border-radius: 10px;
+ 
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding:0;
+    width: 210px;
+    height: 200px;
+    margin:0 20px;
+    filter:drop-shadow(0px 0px 5px #ffffff);
+}
+.encabezado-task{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:  center;
+    width: 100%;
+    padding:  5px 10px;
+   
+}
+.cuerpo-task{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    padding:10px;
+    text-align: center;
+    height: 100%;
+   
+   
+}
+.footer-card{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap:7px;
+    width: 100%;
+}
+.edit,.delete{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+    width: 30px;
+    height: 30px;
+    border: solid 1px #ffffff;
+    border-radius: 5px;
+   
+}
+.edit:hover{
+   background-color:yellow;
+   color: black;
+   
+}
+.delete:hover{
+    background-color:red;
+    color: black;
+    
+ }
+/* prioridades */
+.baja{
+    background-color: var(--success);
+    color:white;
+}
+.media{
+    background-color: var(--warning);
+    color:white;
+}
+.alta{
+    background-color: var(--danger);
+    color:white;
+}
+
+.completados{
+   width: 100%;;
+   display:flex;
+   justify-content: flex-start;
+   background-color: #00000030;
+   padding:20px;
+   min-height: 220px;
+   flex-wrap: wrap;
+}

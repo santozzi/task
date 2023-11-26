@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="https://kit.fontawesome.com/fc5b6abbcf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-nav">
+        <nav>
+        <a href="../index.html">
+          <div class="nav-home seccion-activada">
+            <i class="fa-solid fa-house"></i>
+       
+          </div>
+        </a>
+          <a href="./alta.html">
+            <div class="nav-alta">
+            <i class="fa-solid fa-list-check"></i>
+            
+            </div>
+          </a>
+          <a href="./media.html">
+            <div class="nav-media">
+            <i class="fa-solid fa-list-check"></i>
+            
+            </div>
+          </a>
+          <a href="./baja.html">
+            <div class="nav-baja">
+            <i class="fa-solid fa-list-check"></i>
+            
+            </div>
+          </a>
+          <a href="./completados.html">
+            <div class="nav-completados">
+            <i class="fa-solid fa-list-check"></i>
+           
+            </div>
+          </a>
+        </nav>
+      </div>
+    <main>
+    <section class="section-form">
+
+        <img src="../images/logo.svg" alt="logo">
+        
+        
+        <div class="section-form">
+          <form method="POST">
+            
+            <input type="text" name="title" id="title" placeholder="Titulo">
+            <select  value="Enviar" name="prioridad" id="prioridad">
+                <option value="alta">Alta</option>
+                <option value="media">Media</option>
+                <option value="baja">Baja</option>
+            </select>
+            <textarea type="text" name="description" id="description" placeholder="Descripcion"></textarea>
+            
+            
+            
+            <input class="button" type="submit" value="Enviar" name="agregar-task" id="boton-formulario-home">
+            <input class="button" type="submit" value="Editar" name="editar-task" id="boton-formulario-edit">
+            </form>
+            </div>
+    </section>
+    <section class="section-cards">
+        <div class="prioridad-alta" id="prioridad-alta">
+           
+        </div>
+
+       
+           
+    </section>
+   
+
+
+
+    </main>
+
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+       <script src="../js/alta.js" type="module"></script>
+</body>
+
+</html>
